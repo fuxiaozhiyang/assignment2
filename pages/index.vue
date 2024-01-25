@@ -12,9 +12,7 @@ const characters = data;
         <li v-for="character in characters.data" :key="character.id">
           <h3>{{ character.name }}</h3>
           <p class="aligncenter">
-            <span class="border">
            <img :src="character.imageUrl" />
-            </span>
           </p>
           <h4>{{"Films:" + character.films }}</h4>
         </li>
